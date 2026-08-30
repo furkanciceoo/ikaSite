@@ -6,6 +6,14 @@ export default function TeknofestArac() {
   // MOBİL MENÜ STATE'İ
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // 0. SİSTEM MİMARİSİ GÖRSELLERİ
+  const sistemGorseller = [
+    'https://github.com/furkanciceoo/dneme/raw/917ab5164c857ef2e71584c662ca977c04c0d2d9/sistemBlokSema.png',
+    'https://github.com/furkanciceoo/siteExmp/raw/656366c999919745bca6cd544373ebb5d8839241/genelHaberlesmeFoto.png',
+    'https://github.com/furkanciceoo/siteExmp/raw/656366c999919745bca6cd544373ebb5d8839241/IMG-20260821-WA0025.jpg',
+    ,
+  ];
+
   // 1. MEKANİK GÖRSELLERİ
   const mekanikGorseller = [
     'https://github.com/furkanciceoo/dneme/raw/917ab5164c857ef2e71584c662ca977c04c0d2d9/yandanGorunum.png',
@@ -104,13 +112,7 @@ export default function TeknofestArac() {
       gorsel:
         'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=400&auto=format&fit=crop',
     },
-    {
-      isim: 'Üye 9',
-      rol: 'Haberleşme',
-      motto: 'LoRa, GCS Terminali ve E-Stop protokolleri.',
-      gorsel:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop',
-    },
+    
     {
       isim: 'Yusuf Eren BOZKURT',
       rol: 'Gömülü Sistemler Sorumlusu',
@@ -155,22 +157,67 @@ export default function TeknofestArac() {
     },
   ];
 
+  // 6. SPONSORLAR VE DESTEKÇİLER VERİSİ
+  const sponsorlar = [
+    {
+      isim: 'TEKNOFEST',
+      tur: 'Yarışma Organizasyonu',
+      logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop',
+    },
+    {
+      isim: 'Üniversite Destekçisi',
+      tur: 'Akademik & Kurumsal',
+      logo: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=300&auto=format&fit=crop',
+    },
+    {
+      isim: 'Öğrenci Topluluğu',
+      tur: 'Sponsor & Koordinasyon',
+      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
+    },
+  ];
+
+  // GÖRSEL İNDEKS STATE'LERİ
+  const [currentSistemImage, setCurrentSistemImage] = useState(0);
   const [currentMekanikImage, setCurrentMekanikImage] = useState(0);
   const [currentElektronikImage, setCurrentElektronikImage] = useState(0);
   const [currentYazilimImage, setCurrentYazilimImage] = useState(0);
   const [currentTestImage, setCurrentTestImage] = useState(0);
 
+  // DURAKLATMA (PAUSE) STATE'LERİ
+  const [isSistemPaused, setIsSistemPaused] = useState(false);
+  const [isMekanikPaused, setIsMekanikPaused] = useState(false);
+  const [isElektronikPaused, setIsElektronikPaused] = useState(false);
+  const [isYazilimPaused, setIsYazilimPaused] = useState(false);
+  const [isTestPaused, setIsTestPaused] = useState(false);
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentMekanikImage((prev) => (prev + 1) % mekanikGorseller.length);
-      setCurrentElektronikImage(
-        (prev) => (prev + 1) % elektronikGorseller.length
-      );
-      setCurrentYazilimImage((prev) => (prev + 1) % yazilimGorseller.length);
-      setCurrentTestImage((prev) => (prev + 1) % testGorseller.length);
+      if (!isSistemPaused) {
+        setCurrentSistemImage((prev) => (prev + 1) % sistemGorseller.length);
+      }
+      if (!isMekanikPaused) {
+        setCurrentMekanikImage((prev) => (prev + 1) % mekanikGorseller.length);
+      }
+      if (!isElektronikPaused) {
+        setCurrentElektronikImage(
+          (prev) => (prev + 1) % elektronikGorseller.length
+        );
+      }
+      if (!isYazilimPaused) {
+        setCurrentYazilimImage((prev) => (prev + 1) % yazilimGorseller.length);
+      }
+      if (!isTestPaused) {
+        setCurrentTestImage((prev) => (prev + 1) % testGorseller.length);
+      }
     }, 3500);
     return () => clearInterval(timer);
   }, [
+    isSistemPaused,
+    isMekanikPaused,
+    isElektronikPaused,
+    isYazilimPaused,
+    isTestPaused,
+    sistemGorseller.length,
     mekanikGorseller.length,
     elektronikGorseller.length,
     yazilimGorseller.length,
@@ -250,6 +297,12 @@ export default function TeknofestArac() {
             >
               Ekibimiz
             </a>
+            <a
+              href="#sponsorlar"
+              className="hover:text-rose-700 transition-colors"
+            >
+              Sponsorlar
+            </a>
           </div>
 
           {/* Mobil Hamburger Menü Butonu */}
@@ -323,9 +376,16 @@ export default function TeknofestArac() {
               <a
                 href="#ekibimiz"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-rose-700 transition-colors py-1"
+                className="hover:text-rose-700 transition-colors py-1 border-b border-slate-50"
               >
                 Ekibimiz
+              </a>
+              <a
+                href="#sponsorlar"
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-rose-700 transition-colors py-1"
+              >
+                Sponsorlar
               </a>
             </div>
           )}
@@ -374,12 +434,26 @@ export default function TeknofestArac() {
               </p>
             </div>
 
-            <div className="mb-16 md:mb-24 max-w-5xl mx-auto flex items-center justify-center min-h-[200px] md:min-h-[300px]">
-              <img
-                src="https://github.com/furkanciceoo/dneme/raw/917ab5164c857ef2e71584c662ca977c04c0d2d9/sistemBlokSema.png"
-                alt="MAGNESIA LYDIA Sistem Blok Şeması"
-                className="w-full h-auto object-contain"
-              />
+            {/* SİSTEM MİMARİSİ SLIDER (DURDURMA ÖZELLİKLİ) */}
+            <div
+              onClick={() => setIsSistemPaused((prev) => !prev)}
+              title={
+                isSistemPaused
+                  ? 'Oynatmak için tıklayın'
+                  : 'Durdurmak için tıklayın'
+              }
+              className="mb-16 md:mb-24 max-w-5xl mx-auto flex items-center justify-center min-h-[200px] md:min-h-[300px] relative overflow-hidden cursor-pointer"
+            >
+              {sistemGorseller.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Sistem Mimarisi Görsel ${index + 1}`}
+                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out ${
+                    index === currentSistemImage ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+              ))}
             </div>
 
             {/* BİLGİ KARTLARI VE GÖRSEL KAPSAYICISI */}
@@ -445,9 +519,17 @@ export default function TeknofestArac() {
                   </ul>
                 </div>
 
-                {/* Sağ Taraf: Görsel Çerçevesi */}
+                {/* Sağ Taraf: Görsel Çerçevesi (DURDURMA ÖZELLİKLİ) */}
                 <div className="w-full md:w-[47%] shrink-0 flex justify-end">
-                  <div className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-200 shadow-sm">
+                  <div
+                    onClick={() => setIsMekanikPaused((prev) => !prev)}
+                    title={
+                      isMekanikPaused
+                        ? 'Oynatmak için tıklayın'
+                        : 'Durdurmak için tıklayın'
+                    }
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-200 shadow-sm cursor-pointer"
+                  >
                     {mekanikGorseller.map((img, index) => (
                       <img
                         key={index}
@@ -529,9 +611,17 @@ export default function TeknofestArac() {
                   </ul>
                 </div>
 
-                {/* Sağ Taraf: Görsel Çerçevesi */}
+                {/* Sağ Taraf: Görsel Çerçevesi (DURDURMA ÖZELLİKLİ) */}
                 <div className="w-full md:w-[47%] shrink-0 flex justify-end">
-                  <div className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm">
+                  <div
+                    onClick={() => setIsElektronikPaused((prev) => !prev)}
+                    title={
+                      isElektronikPaused
+                        ? 'Oynatmak için tıklayın'
+                        : 'Durdurmak için tıklayın'
+                    }
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+                  >
                     {elektronikGorseller.map((img, index) => (
                       <img
                         key={index}
@@ -625,9 +715,17 @@ export default function TeknofestArac() {
                   </ul>
                 </div>
 
-                {/* Sağ Taraf: Görsel Çerçevesi */}
+                {/* Sağ Taraf: Görsel Çerçevesi (DURDURMA ÖZELLİKLİ) */}
                 <div className="w-full md:w-[47%] shrink-0 flex justify-end">
-                  <div className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm">
+                  <div
+                    onClick={() => setIsYazilimPaused((prev) => !prev)}
+                    title={
+                      isYazilimPaused
+                        ? 'Oynatmak için tıklayın'
+                        : 'Durdurmak için tıklayın'
+                    }
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+                  >
                     {yazilimGorseller.map((img, index) => (
                       <img
                         key={index}
@@ -709,9 +807,17 @@ export default function TeknofestArac() {
                   </ul>
                 </div>
 
-                {/* Sağ Taraf: Görsel Çerçevesi */}
+                {/* Sağ Taraf: Görsel Çerçevesi (DURDURMA ÖZELLİKLİ) */}
                 <div className="w-full md:w-[47%] shrink-0 flex justify-end">
-                  <div className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm">
+                  <div
+                    onClick={() => setIsTestPaused((prev) => !prev)}
+                    title={
+                      isTestPaused
+                        ? 'Oynatmak için tıklayın'
+                        : 'Durdurmak için tıklayın'
+                    }
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+                  >
                     {testGorseller.map((img, index) => (
                       <img
                         key={index}
@@ -731,10 +837,10 @@ export default function TeknofestArac() {
           </div>
         </section>
 
-        {/* 2. EKİBİMİZ BÖLÜMÜ */}
+        {/* 2. EKİBİMİZ BÖLÜMÜ (BEYAZ ARKA PLAN - GRİ KARTLAR) */}
         <section
           id="ekibimiz"
-          className="py-16 md:py-24 bg-slate-50 px-4 md:px-6 border-t border-slate-100"
+          className="py-16 md:py-24 bg-white px-4 md:px-6 border-t border-slate-100"
         >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
@@ -748,12 +854,12 @@ export default function TeknofestArac() {
               </p>
             </div>
 
-            {/* EKİP GRID YAPISI */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto justify-items-center">
+            {/* EKİP GRID YAPISI (5 SÜTUNLU) */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 max-w-6xl mx-auto justify-items-center">
               {ekipUyeleri.map((uye, index) => (
                 <div
                   key={index}
-                  className="flex flex-col bg-white rounded border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group w-full max-w-[300px]"
+                  className="flex flex-col bg-slate-50 rounded border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group w-full max-w-[200px]"
                 >
                   {/* Fotoğraf Alanı */}
                   <div className="w-full aspect-square overflow-hidden bg-slate-100 relative">
@@ -765,25 +871,22 @@ export default function TeknofestArac() {
                   </div>
 
                   {/* Bilgi Alanı */}
-                  <div className="p-5 md:p-6 flex flex-col flex-grow text-center items-center">
-                    <h4 className="text-base md:text-lg font-bold text-slate-900 tracking-wide">
+                  <div className="p-3 md:p-4 flex flex-col flex-grow text-center items-center">
+                    <h4 className="text-sm md:text-base font-bold text-slate-900 tracking-tight leading-tight mb-1">
                       {uye.isim}
                     </h4>
-                    <span className="text-rose-700 text-xs font-semibold tracking-widest uppercase mt-1 mb-3">
+                    <span className="text-rose-700 text-[10px] font-semibold tracking-wider uppercase mb-2">
                       {uye.rol}
                     </span>
-                    <p className="text-slate-500 text-xs md:text-[13px] leading-relaxed font-light mb-4 flex-grow">
-                      {uye.motto}
-                    </p>
 
                     {/* Sosyal Medya İkonları */}
-                    <div className="flex gap-4 mt-auto pt-4 border-t border-slate-50 w-full justify-center">
+                    <div className="flex gap-3 mt-auto pt-3 border-t border-slate-200/50 w-full justify-center">
                       <a
                         href="#"
                         className="text-slate-300 hover:text-slate-900 transition-colors"
                       >
                         <svg
-                          className="w-5 h-5"
+                          className="w-4 h-4"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -796,7 +899,7 @@ export default function TeknofestArac() {
                         className="text-slate-300 hover:text-slate-900 transition-colors"
                       >
                         <svg
-                          className="w-5 h-5"
+                          className="w-4 h-4"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -815,6 +918,92 @@ export default function TeknofestArac() {
             </div>
           </div>
         </section>
+
+        {/* 3. SPONSORLAR VE DESTEKÇİLER BÖLÜMÜ */}
+        <section
+          id="sponsorlar"
+          className="py-16 md:py-24 bg-white px-4 md:px-6 border-t border-slate-100"
+        >
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-2xl md:text-4xl font-light mb-4 text-slate-900 tracking-widest uppercase">
+                Sponsorlar &amp; Destekçiler
+              </h2>
+              <p className="text-slate-500 max-w-2xl mx-auto text-xs md:text-[14px] font-normal leading-relaxed tracking-wide px-2">
+                MAGNESIA LYDIA projesinin geliştirilme, test ve yarışma
+                süreçlerinde bizlere inanan kurumsal ortaklarımız ve akademik
+                destekçilerimiz.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto items-center justify-items-center">
+              {sponsorlar.map((sp, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center p-4 bg-slate-50 border border-slate-100 rounded-lg w-full max-w-[240px] justify-center hover:shadow-sm hover:border-slate-200 transition-all duration-300 group"
+                >
+                  <div className="w-12 h-12 md:w-16 md:h-16 mb-3 rounded-full overflow-hidden bg-white p-2 border border-slate-100 flex items-center justify-center">
+                    <img
+                      src={sp.logo}
+                      alt={sp.isim}
+                      className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <h4 className="text-xs md:text-sm font-bold text-slate-900 tracking-wide text-center">
+                    {sp.isim}
+                  </h4>
+                  <span className="text-[10px] text-rose-700 font-medium tracking-wider mt-1 text-center">
+                    {sp.tur}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 4. FOOTER & STANT QR KOD ALANI */}
+        <footer className="bg-slate-900 text-white py-16 px-4 md:px-12 border-t border-slate-800">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between items-center">
+            {/* Sol Taraf: Marka & Bilgi */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-md">
+              <div className="text-2xl font-bold tracking-[0.2em] text-white mb-2">
+                MAGNESIA <span className="text-rose-500">| LYDIA</span>
+              </div>
+              <p className="text-slate-400 text-xs md:text-sm leading-relaxed mb-4 font-light">
+                2026 TEKNOFEST İnsansız Kara Aracı Kategorisi Finalist
+                Platformu. Otonom navigasyon, yerli mekanik tasarım ve yapay
+                zeka entegrasyonuyla geleceğin savunma teknolojilerini
+                geliştiriyoruz.
+              </p>
+              <div className="text-slate-500 text-xs font-mono">
+                &copy; 2026 MAGNESIA Takımı. Tüm hakları saklıdır.
+              </div>
+            </div>
+
+            {/* Sağ Taraf: Stant Ziyareti QR Kod Kartı */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
+              <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://magnesia-lydia.vercel.app"
+                  alt="Stant QR Kodu"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col text-center sm:text-left">
+                <span className="text-xs font-semibold text-rose-400 uppercase tracking-widest mb-1">
+                  Stant Ziyareti &amp; Jüri Özel
+                </span>
+                <h5 className="text-sm font-bold text-white mb-1">
+                  Sitemizi Cihazınızda İnceleyin
+                </h5>
+                <p className="text-slate-400 text-xs leading-relaxed font-light">
+                  Kameranızı QR koda tutarak web portalını, teknik detayları ve
+                  test videolarını telefonunuzdan takip edebilirsiniz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
