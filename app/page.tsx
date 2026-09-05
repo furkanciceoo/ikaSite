@@ -974,9 +974,10 @@ export default function TeknofestArac() {
   {sponsorlar.map((sp, index) => (
     <div
       key={index}
-      className="flex flex-col items-center justify-center p-6 bg-slate-50 border border-slate-100 rounded-xl w-full hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
+      className="flex flex-col items-center justify-center p-6 md:p-8 bg-slate-50 border border-slate-100 rounded-xl w-full hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
     >
-      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 md:mb-5 rounded-full overflow-hidden bg-white p-3 border border-slate-200 flex items-center justify-center shrink-0">
+      {/* Görsel çerçevesi (w ve h değerleri) yerleşim bozulmadan büyütüldü */}
+      <div className="w-28 h-28 md:w-36 md:h-36 mb-5 md:mb-6 rounded-full overflow-hidden bg-white p-4 border border-slate-200 flex items-center justify-center shrink-0 shadow-sm">
         <img
           src={sp.logo}
           alt={sp.isim}
