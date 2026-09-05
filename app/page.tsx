@@ -970,13 +970,13 @@ export default function TeknofestArac() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto items-center justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-5xl mx-auto">
   {sponsorlar.map((sp, index) => (
     <div
       key={index}
-      className="flex flex-col items-center p-6 bg-slate-50 border border-slate-100 rounded-xl w-full max-w-[320px] justify-center hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
+      className="flex flex-col items-center justify-center p-6 bg-slate-50 border border-slate-100 rounded-xl w-full hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
     >
-      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full overflow-hidden bg-white p-3 border border-slate-100 flex items-center justify-center">
+      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 md:mb-5 rounded-full overflow-hidden bg-white p-3 border border-slate-200 flex items-center justify-center shrink-0">
         <img
           src={sp.logo}
           alt={sp.isim}
@@ -986,7 +986,7 @@ export default function TeknofestArac() {
       <h4 className="text-sm md:text-base font-bold text-slate-900 tracking-wide text-center">
         {sp.isim}
       </h4>
-      <span className="text-[11px] md:text-xs text-rose-700 font-medium tracking-wider mt-1.5 text-center">
+      <span className="text-xs text-rose-700 font-semibold tracking-wider mt-1.5 text-center">
         {sp.tur}
       </span>
     </div>
