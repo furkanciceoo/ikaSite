@@ -54,63 +54,63 @@ export default function TeknofestArac() {
       rol: 'Danisman',
       motto: 'Otonom algoritmalar ve proje koordinasyonu.',
       gorsel:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/2f3e90bdbdfa325ccccdb0dfdfc867f03fa35e45/Ads%C4%B1z%20tasar%C4%B1m%20(2).png',
     },
     {
       isim: 'Feyza KORKMAZ',
       rol: 'Ekip Baskani, Surec Optimizasyon & Test Sorumlusu',
       motto: 'Otonom algoritmalar ve proje koordinasyonu.',
       gorsel:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/2.png',
     },
     {
       isim: 'Hakan OZDIL',
       rol: 'Takim Kaptani & Sasi Tasarim ve Imalat Sorumlusu',
       motto: 'Şasi dinamiği ve üretim süreçleri.',
       gorsel:
-        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/1.png',
     },
     {
       isim: 'Serdar Ozturk YILDIRIM',
       rol: 'Teknik Resim Sorumlusu',
       motto: 'Güç dağıtımı ve sensör füzyonu.',
       gorsel:
-        'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/3.png',
     },
     {
       isim: 'Bugra OZTURK',
       rol: 'Ekip Baskani: Otomasyon & Navigasyon',
       motto: 'YOLOv8 ve derinlik kamerası optimizasyonu.',
       gorsel:
-        'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/4.png',
     },
     {
       isim: 'Kursat KILICARSLAN',
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'Alt seviye kontrol (Arduino) ve BMS iletişimi.',
       gorsel:
-        'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/8.png',
     },
     {
       isim: 'Umit AKPINAR',
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'Nav2 rotalama ve haritalama algoritmaları.',
       gorsel:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/5.png',
     },
     {
       isim: 'Furkan CICEK',
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'PID kontrolcü ve lazer hedefleme sistemi.',
       gorsel:
-        'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/9.png',
     },
     {
       isim: 'Muhammet OZKAN',
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'Dijital ikiz ve ROS2 test senaryoları.',
       gorsel:
-        'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/6.png',
     },
     
     {
@@ -118,48 +118,77 @@ export default function TeknofestArac() {
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'Batarya, dönüştürücüler ve aşırı akım koruması.',
       gorsel:
-        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/7.png',
     },
     {
       isim: 'Yagiz CENGIZ',
       rol: 'Gömülü Sistemler Sorumlusu',
       motto: 'Alüminyum sigma montajı ve yapısal analiz.',
       gorsel:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/10.png',
     },
     {
       isim: 'Muhammed Yahya ARSLANHAN',
       rol: 'Ekip Baskani, Arac Mekanizasyonu, Sasi Kontrolu ve Genel Sistem Entegresyonu',
       motto: 'Bağımsız süspansiyon ve direksiyon geometrisi.',
       gorsel:
-        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/12.png',
     },
     {
       isim: 'Ahmet Efe NEZLI',
       rol: 'Optik Algilama, Haritalama ve Taret Sistemi',
       motto: 'Birim testleri ve log yönetimi.',
       gorsel:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/11.png',
     },
     {
       isim: 'Muhammed Armagan SAMAST',
       rol: 'Guc Elektronigi ve Enerji Yonetimi',
       motto: 'Takım iletişimi ve sosyal medya yönetimi.',
       gorsel:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/13.png',
     },
     {
       isim: 'Selim Dincer ',
       rol: 'Sensor Agi, Veri Akis Yonetimi ve Kalibrasyonu',
       motto: 'Projenin bilimsel ve teknik danışmanlığı.',
       gorsel:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop',
+        'https://github.com/furkanciceoo/dneme/raw/94a83b992fdd1042d7120afeabcdb500fed11554/14.png',
     },
   ];
 
   // 6. SPONSORLAR VE DESTEKÇİLER VERİSİ
   const sponsorlar = [
     {
+      isim: 'TEKNOFEST',
+      tur: 'Yarışma Organizasyonu',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/1.png',
+    },
+    {
+      isim: 'Üniversite Destekçisi',
+      tur: 'Akademik & Kurumsal',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/dc8f075cae6e9d9c3b8f1c8a30800129768b64d0/1.png',
+    },
+    {
+      isim: 'Öğrenci Topluluğu',
+      tur: 'Sponsor & Koordinasyon',
+      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
+    },
+    {
+      isim: 'TEKNOFEST',
+      tur: 'Yarışma Organizasyonu',
+      logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop',
+    },
+    {
+      isim: 'Üniversite Destekçisi',
+      tur: 'Akademik & Kurumsal',
+      logo: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=300&auto=format&fit=crop',
+    },
+    {
+      isim: 'Öğrenci Topluluğu',
+      tur: 'Sponsor & Koordinasyon',
+      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
+    },{
       isim: 'TEKNOFEST',
       tur: 'Yarışma Organizasyonu',
       logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop',
@@ -242,11 +271,16 @@ export default function TeknofestArac() {
 
       <div className="min-h-screen bg-white text-gray-800 font-montserrat scroll-smooth">
         {/* Üst Menü (Navbar) */}
-        <nav className="p-4 md:px-12 flex justify-between items-center bg-white/90 backdrop-blur-md sticky top-0 z-50 w-full border-b border-slate-100">
-          <div className="flex items-center gap-3 md:gap-5">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-50 border border-slate-200 rounded flex items-center justify-center text-[10px] text-slate-400 tracking-widest shrink-0">
-              LOGO
-            </div>
+<nav className="p-4 md:px-12 flex justify-between items-center bg-white/90 backdrop-blur-md sticky top-0 z-50 w-full border-b border-slate-100">
+  <div className="flex items-center gap-3 md:gap-5">
+    {/* LOGO GÖRSELİ BURADA */}
+    <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
+      <img 
+        src="https://github.com/furkanciceoo/dneme/raw/bb6aa08fb162855449ef21b88aeea5c4fd57d560/Ads%C4%B1z%20tasar%C4%B1m%20(1).png" 
+        alt="Magnesia Logo" 
+        className="w-full h-full object-contain" 
+      />
+    </div>
 
             <div className="text-xl md:text-3xl text-rose-700 tracking-wider md:tracking-[0.2em] flex items-center gap-2 md:gap-6">
               <span className="font-light text-slate-500 text-base md:text-2xl">
@@ -936,28 +970,28 @@ export default function TeknofestArac() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto items-center justify-items-center">
-              {sponsorlar.map((sp, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center p-4 bg-slate-50 border border-slate-100 rounded-lg w-full max-w-[240px] justify-center hover:shadow-sm hover:border-slate-200 transition-all duration-300 group"
-                >
-                  <div className="w-12 h-12 md:w-16 md:h-16 mb-3 rounded-full overflow-hidden bg-white p-2 border border-slate-100 flex items-center justify-center">
-                    <img
-                      src={sp.logo}
-                      alt={sp.isim}
-                      className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <h4 className="text-xs md:text-sm font-bold text-slate-900 tracking-wide text-center">
-                    {sp.isim}
-                  </h4>
-                  <span className="text-[10px] text-rose-700 font-medium tracking-wider mt-1 text-center">
-                    {sp.tur}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto items-center justify-items-center">
+  {sponsorlar.map((sp, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center p-6 bg-slate-50 border border-slate-100 rounded-xl w-full max-w-[320px] justify-center hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
+    >
+      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full overflow-hidden bg-white p-3 border border-slate-100 flex items-center justify-center">
+        <img
+          src={sp.logo}
+          alt={sp.isim}
+          className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+        />
+      </div>
+      <h4 className="text-sm md:text-base font-bold text-slate-900 tracking-wide text-center">
+        {sp.isim}
+      </h4>
+      <span className="text-[11px] md:text-xs text-rose-700 font-medium tracking-wider mt-1.5 text-center">
+        {sp.tur}
+      </span>
+    </div>
+  ))}
+</div>
           </div>
         </section>
 
