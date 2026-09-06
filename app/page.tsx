@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { QRCodeSVG } from 'qrcode.react'; 
 
 export default function TeknofestArac() {
   // MOBİL MENÜ STATE'İ
@@ -1038,10 +1039,11 @@ export default function TeknofestArac() {
            {/* Sağ Taraf: Stant Ziyareti QR Kod Kartı */}
            <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
               <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner overflow-hidden">
-                <img
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent('https://lydiamagnesia45.vercel.app/')}`}
-                  alt="Stant QR Kodu"
-                  className="w-full h-full object-cover"
+                <QRCodeSVG 
+                  value="https://lydiamagnesia45.vercel.app/" 
+                  size={112}
+                  level="H"
+                  includeMargin={false}
                 />
               </div>
               <div className="flex flex-col text-center sm:text-left">
