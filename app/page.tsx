@@ -1039,8 +1039,7 @@ export default function TeknofestArac() {
            <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
               <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner overflow-hidden">
                 <img
-                  /* DİKKAT: Vercel linkin farklıysa aşağıdaki https://magnesia-lydia.vercel.app kısmını kendi linkinle değiştir */
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lydiamagnesia45.vercel.app/"
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent('https://lydiamagnesia45.vercel.app/')}`}
                   alt="Stant QR Kodu"
                   className="w-full h-full object-cover"
                 />
