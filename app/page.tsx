@@ -160,49 +160,72 @@ export default function TeknofestArac() {
   // 6. SPONSORLAR VE DESTEKÇİLER VERİSİ
   const sponsorlar = [
     {
-      isim: 'TEKNOFEST',
-      tur: 'Yarışma Organizasyonu',
+      isim: 'Manisa Celal Bayar Universitesi',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/1.png',
     },
     {
-      isim: 'Üniversite Destekçisi',
-      tur: 'Akademik & Kurumsal',
-      logo: 'https://github.com/furkanciceoo/dneme/raw/dc8f075cae6e9d9c3b8f1c8a30800129768b64d0/1.png',
-    },
-    {
-      isim: 'Öğrenci Topluluğu',
-      tur: 'Sponsor & Koordinasyon',
-      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
-    },
-    {
       isim: 'TEKNOFEST',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/2.png',
+    },
+    {
+      isim: 'MotiveX Intelligence',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/3.png',
+    },
+    {
+      isim: 'Manisa Ticaret ve Sanayi Odasi',
       tur: 'Yarışma Organizasyonu',
-      logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/4.png',
     },
     {
-      isim: 'Üniversite Destekçisi',
+      isim: 'E-Tech Enerji Teknolojileri',
       tur: 'Akademik & Kurumsal',
-      logo: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/5.png',
     },
     {
-      isim: 'Öğrenci Topluluğu',
+      isim: 'MOTTO Mekatronik',
       tur: 'Sponsor & Koordinasyon',
-      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/6.png',
     },{
-      isim: 'TEKNOFEST',
+      isim: 'TORA Makina',
       tur: 'Yarışma Organizasyonu',
-      logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/7.png',
+    },
+    {
+      isim: 'Platin Mekatronik',
+      tur: 'Akademik & Kurumsal',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/8.png',
+    },
+    {
+      isim: 'STEM Egitimcileri Dernegi',
+      tur: 'Sponsor & Koordinasyon',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/9.png',
+    },
+    {
+      isim: 'MCBU Proje Koordinasyon Uygulama ve Arastirma Merkezi',
+      tur: 'Yarışma Organizasyonu',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/10.png',
     },
     {
       isim: 'Üniversite Destekçisi',
       tur: 'Akademik & Kurumsal',
-      logo: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/11.png',
     },
     {
       isim: 'Öğrenci Topluluğu',
       tur: 'Sponsor & Koordinasyon',
-      logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/12.png',
     },
+    {
+      isim: 'TEKNOFEST',
+      tur: 'Yarışma Organizasyonu',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/13.png',
+    },
+    {
+      isim: 'Üniversite Destekçisi',
+      tur: 'Akademik & Kurumsal',
+      logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/14.png',
+    },
+    
   ];
 
   // GÖRSEL İNDEKS STATE'LERİ
@@ -646,30 +669,31 @@ export default function TeknofestArac() {
                 </div>
 
                 {/* Sağ Taraf: Görsel Çerçevesi (DURDURMA ÖZELLİKLİ) */}
-                <div className="w-full md:w-[47%] shrink-0 flex justify-end">
-                  <div
-                    onClick={() => setIsElektronikPaused((prev) => !prev)}
-                    title={
-                      isElektronikPaused
-                        ? 'Oynatmak için tıklayın'
-                        : 'Durdurmak için tıklayın'
-                    }
-                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
-                  >
-                    {elektronikGorseller.map((img, index) => (
-                      <img
-                        key={index}
-                        src={img}
-                        alt={`Elektronik Görsel ${index + 1}`}
-                        className={`absolute inset-0 w-full h-full object-contain p-2 transition-opacity duration-1000 ease-in-out ${
-                          index === currentElektronikImage
-                            ? 'opacity-100'
-                            : 'opacity-0'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
+<div className="w-full md:w-[47%] shrink-0 flex justify-end">
+  <div
+    onClick={() => setIsElektronikPaused((prev) => !prev)}
+    title={
+      isElektronikPaused
+        ? 'Oynatmak için tıklayın'
+        : 'Durdurmak için tıklayın'
+    }
+    /* bg-slate-50 yerine bg-white kullanıldı */
+    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-white overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+  >
+    {elektronikGorseller.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt={`Elektronik Görsel ${index + 1}`}
+        className={`absolute inset-0 w-full h-full object-contain p-2 transition-opacity duration-1000 ease-in-out ${
+          index === currentElektronikImage
+            ? 'opacity-100'
+            : 'opacity-0'
+        }`}
+      />
+    ))}
+  </div>
+</div>
               </div>
 
               {/* --- YAZILIM MİMARİSİ --- */}
@@ -976,12 +1000,12 @@ export default function TeknofestArac() {
       key={index}
       className="flex flex-col items-center justify-center p-6 md:p-8 bg-slate-50 border border-slate-100 rounded-xl w-full hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
     >
-      {/* Görsel çerçevesi (w ve h değerleri) yerleşim bozulmadan büyütüldü */}
-      <div className="w-28 h-28 md:w-36 md:h-36 mb-5 md:mb-6 rounded-full overflow-hidden bg-white p-4 border border-slate-200 flex items-center justify-center shrink-0 shadow-sm">
+      <div className="w-32 h-32 md:w-40 md:h-40 mb-5 md:mb-6 rounded-full overflow-hidden bg-white p-4 md:p-5 border border-slate-200 flex items-center justify-center shrink-0 shadow-sm">
         <img
           src={sp.logo}
           alt={sp.isim}
-          className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+          /* grayscale ve group-hover özellikleri kaldırıldı, orijinal renk görünecek */
+          className="w-full h-full object-contain"
         />
       </div>
       <h4 className="text-sm md:text-base font-bold text-slate-900 tracking-wide text-center">
