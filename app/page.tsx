@@ -30,7 +30,8 @@ export default function TeknofestArac() {
     'https://github.com/furkanciceoo/dneme/raw/6e5f58419e9a4d680a99f36dd820776f8b0572f2/Screenshot_2026-08-28-18-47-30-308_com.android.chrome-edit.jpg',
     'https://github.com/furkanciceoo/dneme/raw/6e5f58419e9a4d680a99f36dd820776f8b0572f2/Screenshot_2026-08-28-18-49-52-231_com.android.chrome-edit.jpg',
     'https://github.com/furkanciceoo/dneme/raw/6e5f58419e9a4d680a99f36dd820776f8b0572f2/Screenshot_2026-08-28-18-51-03-732_com.android.chrome-edit.jpg',
-    'https://github.com/furkanciceoo/dneme/raw/1f712546427669202ef1088d7e9b9e42d4f4b135/image.png'
+    'https://github.com/furkanciceoo/dneme/raw/1f712546427669202ef1088d7e9b9e42d4f4b135/image.png',  
+    'https://github.com/furkanciceoo/dneme/raw/761acf571f5c06f570d6582e76efe574abece807/image.png'
   ];
 
   // 3. YAZILIM GÖRSELLERİ
