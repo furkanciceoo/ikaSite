@@ -173,56 +173,45 @@ export default function TeknofestArac() {
     },
     {
       isim: 'Manisa Ticaret ve Sanayi Odasi',
-      tur: 'Yarışma Organizasyonu',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/4.png',
     },
     {
-      isim: 'E-Tech Enerji Teknolojileri',
-      tur: 'Akademik & Kurumsal',
+      isim: 'Manisa Teknokent',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/5.png',
     },
     {
-      isim: 'MOTTO Mekatronik',
-      tur: 'Sponsor & Koordinasyon',
+      isim: 'E-Tech Enerji Teknolojileri',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/6.png',
     },{
-      isim: 'TORA Makina',
-      tur: 'Yarışma Organizasyonu',
+      isim: 'MOTTO Mekatronik',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/7.png',
     },
     {
-      isim: 'Platin Mekatronik',
-      tur: 'Akademik & Kurumsal',
+      isim: 'TORA Makina',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/8.png',
     },
     {
-      isim: 'STEM Egitimcileri Dernegi',
-      tur: 'Sponsor & Koordinasyon',
+      isim: 'Platin Mekatronik',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/9.png',
     },
     {
-      isim: 'MCBU Proje Koordinasyon Uygulama ve Arastirma Merkezi',
-      tur: 'Yarışma Organizasyonu',
+      isim: 'STEM Egitimciler Dernegi',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/10.png',
     },
     {
-      isim: 'Üniversite Destekçisi',
-      tur: 'Akademik & Kurumsal',
+      isim: 'MCBU Proje Koordinasyon Uygulama ve Arastirma Merkezi',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/11.png',
     },
     {
-      isim: 'Öğrenci Topluluğu',
-      tur: 'Sponsor & Koordinasyon',
+      isim: 'MCBU Yapay Zeka ve Inovasyon Atolyesi',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/12.png',
     },
     {
-      isim: 'TEKNOFEST',
-      tur: 'Yarışma Organizasyonu',
+      isim: 'Proje Arge ve Inovasyon Toplulugu',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/13.png',
     },
     {
-      isim: 'Üniversite Destekçisi',
-      tur: 'Akademik & Kurumsal',
+      isim: 'Alternatif Enerji Toplulugu',
       logo: 'https://github.com/furkanciceoo/dneme/raw/37c6e05830b08cd8eee5b1d4805b5a5eee0b6dd0/14.png',
     },
     
@@ -585,7 +574,8 @@ export default function TeknofestArac() {
                         ? 'Oynatmak için tıklayın'
                         : 'Durdurmak için tıklayın'
                     }
-                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-200 shadow-sm cursor-pointer"
+                    /* bg-slate-50 yerine bg-white yapıldı ve flex ortalama eklendi */
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-white overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
                   >
                     {mekanikGorseller.map((img, index) => (
                       <img
@@ -782,7 +772,8 @@ export default function TeknofestArac() {
                         ? 'Oynatmak için tıklayın'
                         : 'Durdurmak için tıklayın'
                     }
-                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+                    /* bg-slate-50 yerine bg-white yapıldı */
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-white overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
                   >
                     {yazilimGorseller.map((img, index) => (
                       <img
@@ -874,7 +865,8 @@ export default function TeknofestArac() {
                         ? 'Oynatmak için tıklayın'
                         : 'Durdurmak için tıklayın'
                     }
-                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-slate-50 overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
+                    /* bg-slate-50 yerine bg-white yapıldı */
+                    className="relative w-full aspect-[4/3] max-h-[350px] md:max-h-[390px] rounded-lg bg-white overflow-hidden border border-slate-100 flex items-center justify-center shadow-sm cursor-pointer"
                   >
                     {testGorseller.map((img, index) => (
                       <img
@@ -924,7 +916,8 @@ export default function TeknofestArac() {
                     <img
                       src={uye.gorsel}
                       alt={uye.isim}
-                      className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-in-out"
+                      /* 'filter grayscale group-hover:grayscale-0' sınıfları silindi */
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
                     />
                   </div>
 
