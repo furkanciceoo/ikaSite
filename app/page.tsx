@@ -1035,13 +1035,14 @@ export default function TeknofestArac() {
               </div>
             </div>
 
-            {/* Sağ Taraf: Stant Ziyareti QR Kod Kartı */}
-            <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
-              <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner">
+           {/* Sağ Taraf: Stant Ziyareti QR Kod Kartı */}
+           <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
+              <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner overflow-hidden">
                 <img
-                  src="https://github.com/furkanciceoo/imagesIka/raw/67451b1e2eb2c2e8273094ff25bf833f9e6beadf/Ads%C4%B1z%20tasar%C4%B1m%20(3).png"
+                  /* DİKKAT: Vercel linkin farklıysa aşağıdaki https://magnesia-lydia.vercel.app kısmını kendi linkinle değiştir */
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lydiamagnesia45.vercel.app/"
                   alt="Stant QR Kodu"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex flex-col text-center sm:text-left">
