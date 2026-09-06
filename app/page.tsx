@@ -11,7 +11,7 @@ export default function TeknofestArac() {
     'https://github.com/furkanciceoo/dneme/raw/917ab5164c857ef2e71584c662ca977c04c0d2d9/sistemBlokSema.png',
     'https://github.com/furkanciceoo/siteExmp/raw/656366c999919745bca6cd544373ebb5d8839241/genelHaberlesmeFoto.png',
     'https://github.com/furkanciceoo/siteExmp/raw/656366c999919745bca6cd544373ebb5d8839241/IMG-20260821-WA0025.jpg',
-    ,
+    
   ];
 
   // 1. MEKANİK GÖRSELLERİ
