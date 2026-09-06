@@ -31,7 +31,8 @@ export default function TeknofestArac() {
     'https://github.com/furkanciceoo/dneme/raw/6e5f58419e9a4d680a99f36dd820776f8b0572f2/Screenshot_2026-08-28-18-49-52-231_com.android.chrome-edit.jpg',
     'https://github.com/furkanciceoo/dneme/raw/6e5f58419e9a4d680a99f36dd820776f8b0572f2/Screenshot_2026-08-28-18-51-03-732_com.android.chrome-edit.jpg',
     'https://github.com/furkanciceoo/dneme/raw/1f712546427669202ef1088d7e9b9e42d4f4b135/image.png',  
-    'https://github.com/furkanciceoo/dneme/raw/761acf571f5c06f570d6582e76efe574abece807/image.png'
+    'https://github.com/furkanciceoo/dneme/raw/761acf571f5c06f570d6582e76efe574abece807/image.png',
+  `https://github.com/furkanciceoo/imagesIka/raw/de288ef32cea38d9e6d3892fa343031317497a45/IMG-20260821-WA0019.jpg`
   ];
 
   // 3. YAZILIM GÖRSELLERİ
@@ -1038,7 +1039,7 @@ export default function TeknofestArac() {
             <div className="flex flex-col sm:flex-row items-center gap-6 bg-slate-800/80 border border-slate-700/60 p-6 rounded-xl shadow-lg max-w-md">
               <div className="w-28 h-28 bg-white p-2 rounded-lg shrink-0 flex items-center justify-center shadow-inner">
                 <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://magnesia-lydia.vercel.app"
+                  src="https://github.com/furkanciceoo/imagesIka/raw/67451b1e2eb2c2e8273094ff25bf833f9e6beadf/Ads%C4%B1z%20tasar%C4%B1m%20(3).png"
                   alt="Stant QR Kodu"
                   className="w-full h-full object-contain"
                 />
